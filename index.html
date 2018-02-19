@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>crystals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
+</head>
+
+<body>
+  <header class="container">
+    <H1>The Crystal Collector</H1>
+  </header>
+  <section class="container">
+    <div class="col-12">
+      <p>You will be given a random number at the start of the game.
+      </p>
+      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+      </p>
+      <p>You win the game by matching your total score to the random number. You lose the game if your total score exceeds the
+        random number
+      </p>
+      <p>The value of each crystals is hidden from you until you click on it.
+      </p>
+      <p>For every new game, the value of the crystals will change.
+
+      </p>
+
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <h1>Goal</h1>
+        <h1 class="goalTot"></h1>
+      </div>
+      <div class="col-4">
+        <h1>Current</h1>
+        <h1 class="currentTot"></h1>
+      </div>
+      <div class="col-4">
+        <h2>Wins</h1>
+          <h2 class="wins">
+            </h1>
+            <h2>Losses</h2>
+            <h2 class="losses"></h2>
+      </div>
+    </div>
+    <div class="row">
+      <button class="col-3 quartz">
+        <h1>Quartz</h1>
+      </button>
+      <button class="col-3 fluorite">
+        <h1>Fluorite</h1>
+      </button>
+      <button class="col-3 hematite">
+        <h1>Hematite</h1>
+      </button>
+      <button class="col-3 amethyst">
+        <h1>Amethyst</h1>
+      </button>
+    </div>
+
+  </section>
+
+  <script type="text/javascript" src="./assets/javascript/game.js">
+  </script>
+
+</body>
+
+</html>
