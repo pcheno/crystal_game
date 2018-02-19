@@ -15,19 +15,24 @@ section {
     background: lightblue;
     font-size: 120%;
 }
-
+button {
+    word-wrap: break-word;
+}
 .quartz {
-
+    background: beige;
 }
 
 .fluorite {
-
+    background: brown;
 }
 
 .hematite {
+    background:black;
+    color: white;
 
 }
 
 .amethyst {
-    
+    background: orange;
+
 }

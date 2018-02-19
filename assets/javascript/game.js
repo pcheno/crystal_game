@@ -1,59 +1,8 @@
-    // Creates an array that lists out all of the options a-z.
-    var computerChoices = [{
-        name: "THE FACES",
-        image: "./assets/images/theFaces.jpg",
-        song: "./assets/music/oohLaLa.mp3"
-      },
-      {
-        name: "AL STEWART",
-        image: "./assets/images/alStewart.jpg",
-        song: "./assets/music/timePassages.mp3"
-      },
-      {
-        name: "TODD RUNDGREN",
-        image: "./assets/images/toddRundgren.jpg",
-        song: "./assets/music/helloItsMe.mp3"
-      },
-      {
-        name: "GERRY RAFFERTY",
-        image: "./assets/images/gerryRafferty.jpg",
-        song: "./assets/music/bakersStreet.mp3"
-      },
-      {
-        name: "STEALERS WHEEL",
-        image: "./assets/images/stealersWheel.jpg",
-        song: "./assets/music/stuckInTheMiddle.mp3"
-      },
-      {
-        name: "SWEET",
-        image: "./assets/images/sweet.jpg",
-        song: "./assets/music/foxOnTheRun.mp3"
-      },
-      {
-        name: "10CC",
-        image: "./assets/images/10cc.jpg",
-        song: "./assets/music/imNotInLove.mp3"
-      },
-      {
-        name: "HARRY NILSSON",
-        image: "./assets/images/harryNilsson.jpg",
-        song: "./assets/music/everybodysTalkin.mp3"
-      },
-      {
-        name: "SEALS AND CROFT",
-        image: "./assets/images/sealsAndCroft.jpg",
-        song: "./assets/music/summerBreeze.mp3"
-      },
-      {
-        name: "GILBERT SULLIVAN",
-        image: "./assets/images/gilbertSullivan.jpg",
-        song: "./assets/music/aloneAgain.mp3"
-      }
-    ];
-
-
-
-
+    // Creates an array containing the crystal names.
+    
+    var crystalsArr = ["quartz","fluorite","hematite","amethyst"]
+    
+    
     // Creating variables to hold the number of wins, losses, and ties. They start at 0.
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
@@ -63,11 +12,9 @@
     var game = {
       "wins": 0,
       "losses": 0,
-      "guess": "",
-      "guessStr": "",
-      "guessLeft": 12,
-      "band": "SWEET",
-      "disStr": computerGuess.name
+      "goalTot": 0,
+      "currentTot":0,
+
     };
     var band = {
       "pict": computerGuess.image,
