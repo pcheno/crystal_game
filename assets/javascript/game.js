@@ -1,38 +1,40 @@
-    // Creates an array containing the crystal names.
-    
-    var crystalsArr = ["quartz","fluorite","hematite","amethyst"]
-    
-    
+    // Creates an array containing the crystal names and initial values
+    $(document).ready(function() {
+    var crystals = [{
+        name: "quartz",
+        value: 0
+      },
+      {
+        name: "fluorite",
+        value: 0
+      },
+      {
+        name: "hematite",
+        value: 0
+      },
+      {
+        name: "amethyst",
+        value: 0
+      }
+    ];
+
+
     // Creating variables to hold the number of wins, losses, and ties. They start at 0.
-    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
-
-
-
     var game = {
       "wins": 0,
       "losses": 0,
       "goalTot": 0,
-      "currentTot":0,
-
+      "currentTot": 0,
     };
-    var band = {
-      "pict": computerGuess.image,
-      "song": computerGuess.song
-    }
 
-    var html = "";
     var winFlag = false;
     var trii = -1; //negative identifies first time through
 
-    //function to recreate the display word
-    function createDisStr() {
-      game.disStr = computerGuess.name;
-      for (var i = 0; i < computerGuess.name.length; i++) {
-        if ((game.guessStr.includes(computerGuess.name[i]) == false) && (computerGuess.name[i] != " ")) {
-          //letter of computerguess is NOTin the list of guessed letters. hide it "-"
-          game.disStr = game.disStr.replace(computerGuess.name[i], "-");
-        }
+    //function to reset game objects and crystal values
+    function resetCrystals() {
+      game.goalTot = Math.random() * (121 - 19) + 19;
+      for (var i = 0; i < crystals.length; i++) {
+        crystals[i].value = Math.random() * (13 - 1) + 1;
       }
     }
 
@@ -124,5 +126,6 @@
         "<p>Band: " + game.band + "</p>";
       */
       // Set the inner HTML contents of the #game div to our html string
-     // document.querySelector("#game").innerHTML = html;
+      // document.querySelector("#game").innerHTML = html;
     }
+  });
