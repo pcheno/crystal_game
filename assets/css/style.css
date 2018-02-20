@@ -18,21 +18,25 @@ section {
 button {
     word-wrap: break-word;
 }
-.quartz {
+#quartz {
     background: beige;
 }
 
-.fluorite {
+#fluorite {
     background: brown;
 }
 
-.hematite {
+#hematite {
     background:black;
     color: white;
 
 }
 
-.amethyst {
+#amethyst {
     background: orange;
 
+}
+
+div.col-4 h2 {
+    display: inline-block;
 }

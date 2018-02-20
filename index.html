@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
   <!-- Added link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
 
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 
@@ -39,39 +40,37 @@
     <div class="row">
       <div class="col-4">
         <h1>Goal</h1>
-        <h1 class="goalTot"></h1>
+        <h1 id="goalTot"></h1>
       </div>
       <div class="col-4">
         <h1>Current</h1>
-        <h1 class="currentTot"></h1>
+        <h1 id="currentTot"></h1>
       </div>
       <div class="col-4">
-        <h2>Wins</h1>
-          <h2 class="wins">
-            </h1>
-            <h2>Losses</h2>
-            <h2 class="losses"></h2>
+        <h2>Wins</h2>
+          <h2 id="wins">0</h2>
+            <h2>Losses:</h2>
+            <h2 id="losses">0</h2>
       </div>
     </div>
     <div class="row">
-      <button class="col-3 quartz">
+      <button id="quartz" class="col-3">
         <h1>Quartz</h1>
       </button>
-      <button class="col-3 fluorite">
+      <button id="fluorite" class="col-3">
         <h1>Fluorite</h1>
       </button>
-      <button class="col-3 hematite">
+      <button id="hematite" class="col-3">
         <h1>Hematite</h1>
       </button>
-      <button class="col-3 amethyst">
+      <button id="amethyst" class="col-3">
         <h1>Amethyst</h1>
       </button>
     </div>
 
   </section>
 
-  <script type="text/javascript" src="./assets/javascript/game.js">
-  </script>
+
 
 </body>
 
