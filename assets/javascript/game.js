@@ -18,7 +18,6 @@ $(document).ready(function () {
     }
   ];
 
-
   // Creating variables to hold the number of wins, losses, goal total, and current total.
   var game = {
     "wins": $('#wins'),
@@ -26,8 +25,6 @@ $(document).ready(function () {
     "goalTot": $('#goalTot'),
     "currentTot": $('#currentTot')
   };
-
-
 
   //funtion to get random numbers
   function randomNum(min, max) {
