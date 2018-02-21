@@ -42,9 +42,9 @@ $(document).ready(function () {
       crystals[i].value = randomNum(1, 12);
     }
   }
-
+  //start game
   resetCrystals();
-
+  //now wait for button click
   $('button').click(function () {
 
     //button is clicked, which one is it?
