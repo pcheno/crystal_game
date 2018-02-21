@@ -27,7 +27,7 @@ $(document).ready(function () {
     "currentTot": $('#currentTot')
   };
 
-  resetCrystals();
+
 
   //funtion to get random numbers
   function randomNum(min, max) {
@@ -42,6 +42,8 @@ $(document).ready(function () {
       crystals[i].value = randomNum(1, 12);
     }
   }
+
+  resetCrystals();
 
   $('button').click(function () {
 
@@ -72,8 +74,8 @@ $(document).ready(function () {
           resetCrystals();
         }
         break; //crystal found, no need to keep looping
-      }   //if (crystalPick == crystals[i].name) 
-    }  //for (var i = 0; i < crystals.length; i++) 
+      } //if (crystalPick == crystals[i].name) 
+    } //for (var i = 0; i < crystals.length; i++) 
 
-  });  //$('button').click(function () 
-});  //$(document).ready(function ()
+  }); //$('button').click(function () 
+}); //$(document).ready(function ()
