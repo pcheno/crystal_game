@@ -45,7 +45,6 @@ $(document).ready(function () {
   $('button').click(function () {
 
     //button is clicked, which one is it?
-
     var crystalPick = $(this).attr("id");
 
     //loop through crystals array and find the crystal
@@ -60,7 +59,7 @@ $(document).ready(function () {
         $(game.currentTot).text(currentInt);
         //is current total greater than goal total? If so, increase losses, and reset crystals
         //else if current total is equal, increase wins and reset crystals
-        //otherwise keep hitting a crystal button
+        //otherwise keep hitting a crystal button.
         if (currentInt > goalInt) {
           var lossesInt = parseInt($(game.losses).text()) + 1;
           $(game.losses).text(lossesInt);
